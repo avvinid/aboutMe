@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: url('yin-and-yang-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  height: 100vh;
+}
+
+html, body {
+  height: 100%;
+}
+
+.circle-container {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+#black-container {
+  left: 135px;
+  top: 200px;
+}
+
+#black-circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+.black-circle-text {
+  position: absolute;
+  width: 330px;
+  left: 30px;
+  top: 60px;
+  color: white;
+  font-size: 21px;
+  text-align: center;
+}
+
+.black-circle-text p {
+  margin: 6px 0;
+  padding-left: 30px;
+  text-align: left;
+}
+
+#white-container {
+  left: 820px;
+  top: 50px;
+}
+
+.white-circle-text {
+  position: absolute;
+  width: 320px;
+  height: 340px; /* hides 'travelling' content */
+  left: 50px;
+  top: 0px;
+  overflow-y: auto; /* move up/down */
+  color: black;
+  font-size: 22px;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.white-circle-text::-webkit-scrollbar {
+  display: none;
+}
+
+#white-circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+.emoji {
+  filter: grayscale(100%);
+}
+
+.hobby-container {
+  position: absolute;
+  top: 200px; /* move up/down */
+  left: 200px; /* move left/right */
+}
+
+.hobby-img {
+  width: 60px;
+  height: auto;
+  border-radius: 60px;
+}
+
+.hobby-section {
+  margin-bottom: 200px; /* vertical spacing to hide the 'travelling' section initially */
+}
